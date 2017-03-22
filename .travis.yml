@@ -1,5 +1,8 @@
 language: android
 jdk:
     - oraclejdk8
+android:
+  components:
+    - sys-img-x86-google_apis-25
 script:
-  - android list sdk --no-ui --all --extended
+  - android list targets
