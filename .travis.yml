@@ -3,6 +3,9 @@ jdk:
     - oraclejdk8
 android:
   components:
+    - platform-tools
+    - tools
     - sys-img-x86-google_apis-25
 script:
   - android list targets
+  - android list sdk --no-ui --all --extended
